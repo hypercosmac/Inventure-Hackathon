@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Inventure Hackathon 2020</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <style>
+  	.theme-color {
+  		background-color: rgb(27, 33, 44);
+  	}
+  	.theme-text {
+  		background: linear-gradient(to right, rgb(255,255,255) 0%, rgb(27, 33, 44) 55%);
+  		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+  	}
+    #clockdiv{
+      font-family: sans-serif;
+      color: #fff;
+      display: inline-block;
+      font-weight: 100;
+      text-align: center;
+      font-size: 30px;
+    }
+
+    #clockdiv > div{
+      padding: 10px;
+      border-radius: 3px;
+      background: rgb(27, 33, 44);
+      display: inline-block;
+    }
+
+    #clockdiv div > span{
+      padding: 15px;
+      border-radius: 3px;
+      background: rgb(27, 33, 44);
+      display: inline-block;
+    }
+
+    .smalltext{
+      padding-top: 5px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body class="black">
+  <nav class="orange" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo">InvHack</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#themes" class="waves-effect hoverable waves-gray large right scrollspy">Themes</a></li>
+        <li><a href="" class="waves-effect hoverable waves-gray large right scrollspy">Register</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="#prizes">Prizes</a></li>
+        <li><a href="#themes">Themes</a></li>
+        <li><a href="">Register</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center white-text">InvHack 2020</h1>
+        <div class="row center">
+          <div id="clockdiv" class="center">
+          <div>
+            <span class="days"></span>
+            <div class="smalltext">Days</div>
+          </div>
+          <div>
+            <span class="hours"></span>
+            <div class="smalltext">Hours</div>
+          </div>
+          <div>
+            <span class="minutes"></span>
+            <div class="smalltext">Minutes</div>
+          </div>
+          <div>
+            <span class="seconds"></span>
+            <div class="smalltext">Seconds</div>
+          </div>
+        </div>
+          <h5 class="header col s12">A 24 Hour Hackathon For School Students</h5>
+        </div>
+        <!--<div class="row center">
+          <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
+        </div>-->
+        <br><br>
+
+      </div>
+    </div>
+    <div class="parallax"><img src="images/wallpaper.jpg"></div>
+  </div>
+
+
+  <div class="">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <h3 class="center white-text">Outcomes</h3>
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center white-text"><i class="material-icons">people_outline</i></h2>
+            <h4 class="center white-text">Social</h4>
+
+            <h5 class="flow-text center light white-text"><i class="material-icons">location_searching</i> Helping solve societal problems<br><i class="material-icons">face</i> Inculcate empathy in students 
+            </h5>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center white-text"><i class="material-icons">memory</i></h2>
+            <h4 class="center white-text">Technical</h4>
+
+            <h5 class="flow-text center light white-text"><i class="material-icons">devices_other</i> Exposure to various technology<br><i class="material-icons">developer_mode</i> Picking up new skills<br><i class="material-icons">developer_board</i> Insight into skills of peers
+            </h5>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center white-text"><i class="material-icons">language</i></h2>
+            <h4 class="center white-text">Cultural</h4>
+
+            <h5 class="flow-text center light white-text"><i class="material-icons">group</i> Inculcate collaboration within and between teams<br><i class="material-icons">lightbulb_outline</i> Becoming better problem-solvers
+            </h5>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="divider orange container"></div>
+
+  <div class="container">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 center">
+          <h4 id="prizes" class="white-text">Prizes</h4>
+        </div>
+      </div>
+
+    </div>
+    <div class="divider orange"></div>
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 center">
+          <h4 id="themes" class="white-text">Themes</h4>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+    </div>    
+    <div class="parallax"><img src="images/background3_small.jpg"></div>
+  </div>
+  <footer class="page-footer theme-color">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Team Bio</h5>
+          <p class="grey-text text-lighten-4">We are a team of high school students</p>
+
+        </div>
+        <div class="col l6 s12">
+          <h5 class="white-text">Core Team</h5>
+          <ul>
+            <li><a class="white-text" target="_blank" href="https://github.com/hypercosmac">Vikram Mishra</a></li>
+            <li>Samarth Grover</li>
+            <li>Raghav Sanagavarapu</li>
+            <li>Sahil Kuchlous</li>
+          </ul>
+        </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container left">
+      	© 2019 Inventure Hackathon
+      <div class="container right-align">
+      <> by <a class="brown-text text-lighten-3" href="https://github.com/hypercosmac">hypercosmac</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script type="text/javascript">
+  	$(document).ready(function(){
+   		$('.scrollspy').scrollSpy();
+  	});
+    function getTimeRemaining(endtime) {
+  var t = Date.parse(endtime) - Date.parse(new Date());
+  var seconds = Math.floor((t / 1000) % 60);
+  var minutes = Math.floor((t / 1000 / 60) % 60);
+  var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+  var days = Math.floor(t / (1000 * 60 * 60 * 24));
+  return {
+    'total': t,
+    'days': days,
+    'hours': hours,
+    'minutes': minutes,
+    'seconds': seconds
+  };
+}
+
+    function initializeClock(id, endtime) {
+      var clock = document.getElementById(id);
+      var daysSpan = clock.querySelector('.days');
+      var hoursSpan = clock.querySelector('.hours');
+      var minutesSpan = clock.querySelector('.minutes');
+      var secondsSpan = clock.querySelector('.seconds');
+
+      function updateClock() {
+        var t = getTimeRemaining(endtime);
+
+        daysSpan.innerHTML = t.days;
+        hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+        minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+        secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+
+        if (t.total <= 0) {
+          clearInterval(timeinterval);
+        }
+      }
+
+      updateClock();
+      var timeinterval = setInterval(updateClock, 1000);
+    }
+
+    var deadline = new Date(Date.parse("2020-01-11")+9*60*60*1000);
+    initializeClock('clockdiv', deadline);
+  </script>
+  </body>
+</html>
