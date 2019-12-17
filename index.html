@@ -3,6 +3,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
   <title>Inventure Hackathon 2020</title>
 
   <!-- CSS  -->
@@ -40,7 +41,28 @@
       background: rgb(27, 33, 44);
       display: inline-block;
     }
+    #clockdiv1{
+      font-family: sans-serif;
+      color: #fff;
+      display: inline-block;
+      font-weight: 100;
+      text-align: center;
+      font-size: 30px;
+    }
 
+    #clockdiv1 > div{
+      padding: 10px;
+      border-radius: 3px;
+      background: rgb(27, 33, 44);
+      display: inline-block;
+    }
+
+    #clockdiv1 div > span{
+      padding: 15px;
+      border-radius: 3px;
+      background: rgb(27, 33, 44);
+      display: inline-block;
+    }
     .smalltext{
       padding-top: 5px;
       font-size: 16px;
@@ -50,7 +72,9 @@
 <body class="black">
   <nav class="orange darken-3" role="navigation">
     <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo">InvHack</a>
+      <a id="logo-container" href="#" class="brand-logo center">InvHack</a>
+      <a class="brand-logo left hide-on-med-and-down"><img src="favicon.png" height="65px" style="max-height:100%;"></a>
+      <a class="brand-logo right hide-on-large-only"><img src="favicon.png" height="65px" style="max-height:100%;"></a>
       <ul class="right hide-on-med-and-down">
         <li><a href="#prizes" class="white-text waves-effect hoverable waves-gray large right scrollspy">Prizes</a></li>
         <li><a href="#themes" class="white-text waves-effect hoverable waves-gray large right scrollspy">Themes</a></li>
@@ -160,6 +184,36 @@
       <div class="row">
         <div class="col s12 center">
           <h4 id="themes" class="white-text">Themes</h4>
+          <div class="row">
+            <div class="col s12 m6 card black">
+              <div class="flow-text white-text">
+                To encourage fairness, we will release our themes only 1 day prior to the hackathon because all teams are required to develop solutions within the 24 hours of coding in the hackathon. Our themes will encourage you to use technology to create solutions which help solve problems that we see around.
+              </div>
+            </div>
+            <div class="col s12 m6 card black">
+              <div class="flow-text white-text">
+                Themes will be released in:<br>
+                  <div id="clockdiv1" class="center">
+                  <div>
+                    <span class="days"></span>
+                    <div class="smalltext">Days</div>
+                  </div>
+                  <div>
+                    <span class="hours"></span>
+                    <div class="smalltext">Hours</div>
+                  </div>
+                  <div>
+                    <span class="minutes"></span>
+                    <div class="smalltext">Minutes</div>
+                  </div>
+                  <div>
+                    <span class="seconds"></span>
+                    <div class="smalltext">Seconds</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -170,7 +224,7 @@
     </div>    
     <div class="parallax"><img src="images/background3_small.jpg"></div>
   </div>
-  <footer class="page-footer theme-color">
+  <footer class="page-footer black">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
@@ -252,8 +306,10 @@
       var timeinterval = setInterval(updateClock, 1000);
     }
 
-    var deadline = new Date(Date.parse("2020-01-11")+9*60*60*1000);
+    var deadline = new Date(Date.parse("2020-01-11")+3*60*60*1000); //+9*60*60*1000
+    var themedeadline = new Date(Date.parse("2020-01-10")+.5*60*60*1000); //
     initializeClock('clockdiv', deadline);
+    initializeClock('clockdiv1', themedeadline);
   </script>
   </body>
 </html>
