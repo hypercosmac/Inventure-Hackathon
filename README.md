@@ -2,7 +2,6 @@
 
 The Official Website for Inventure Hackathon 2020 <br>
 http://invhack.cf
------------------
 
 <br>Made by Vikram Mishra and Samarth Grover 
 
